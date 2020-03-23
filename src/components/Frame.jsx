@@ -7,7 +7,6 @@ import {
   IconButton
 } from "@material-ui/core";
 import PropTypes from "prop-types";
-import { Menu } from "@material-ui/icons";
 import styles from "./Frame.module.scss";
 
 const Frame = ({ title, children, action }) => {
@@ -15,9 +14,6 @@ const Frame = ({ title, children, action }) => {
     <Container>
       <AppBar position="fixed">
         <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="menu">
-            <Menu />
-          </IconButton>
           <Typography variant="h6" className={styles.title}>
             {title}
           </Typography>

@@ -15,6 +15,7 @@
     "invalidUserForm": "Неверно заполнены поля формы",
     "disagree": "Отмена",
     "agree": "Продолжить",
-    "deleteConfirm" : "Удалить запись?"
+    "deleteConfirm" : "Удалить запись?",
+    "usersEmpty": "Список пуст"
   }
 }
