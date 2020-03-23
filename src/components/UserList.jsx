@@ -55,8 +55,10 @@ const Users = ({ data, action, history }) => {
             <TableBody>
               {data.map((row, k) => (
                 <TableRow
+                  hover
                   key={row.id}
                   onClick={() => history.push(`users/${row.id}`)}
+                  className={styles.tableRow}
                 >
                   <TableCell>#{k + 1}</TableCell>
                   <TableCell component="th" scope="row">
@@ -69,7 +71,10 @@ const Users = ({ data, action, history }) => {
           </Table>
         </TableContainer>
       ) : (
-        <Typography variant="h6" className={styles.empty}> {i("usersEmpty")} </Typography>
+        <Typography variant="h6" className={styles.empty}>
+          {" "}
+          {i("usersEmpty")}{" "}
+        </Typography>
       )}
       <div className={styles.fab}>
         <Fab color="secondary" aria-label="add">
