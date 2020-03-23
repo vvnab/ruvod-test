@@ -1,0 +1,17 @@
+.main {
+  margin-top: 1rem;
+  padding: 1rem;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.message {
+  margin-top: 1rem;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+}

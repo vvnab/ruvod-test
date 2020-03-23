@@ -1,0 +1,20 @@
+{
+  "translation": {
+    "title": "ruvod-test",
+    "version": "0.1.0",
+    "userList": "Список пользователей",
+    "addUserButton": "Добавить",
+    "userName": "Имя",
+    "userEmail": "Email",
+    "errorTitle": "Ошибка",
+    "errorRefresh": "Обновить",
+    "addUser": "Добавление пользователя",
+    "updateUser": "Редактирование пользователя",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "invalidUserForm": "Неверно заполнены поля формы",
+    "disagree": "Отмена",
+    "agree": "Продолжить",
+    "deleteConfirm" : "Удалить запись?"
+  }
+}
