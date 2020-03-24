@@ -18,7 +18,7 @@ import { isEmail, isEmpty } from "validator";
 
 import { USERS, ADD_USER } from "../store";
 
-import styles from "./UserUpdateForm.module.scss";
+import styles from "./UserForm.module.scss";
 
 const UserCreateForm = ({ history, match }) => {
   const [{ name, email }, setUser] = useState({ name: "", email: "" });
@@ -36,6 +36,7 @@ const UserCreateForm = ({ history, match }) => {
     errorPolicy: "all"
   });
   const [i] = useTranslation();
+
   const nameChange = e => {
     const { value } = e.target;
     if (!isEmpty(value)) {
@@ -43,6 +44,7 @@ const UserCreateForm = ({ history, match }) => {
     }
     setUser({ email, name: value });
   };
+
   const emailChange = e => {
     const { value } = e.target;
     if (isEmail(value)) {
@@ -50,6 +52,7 @@ const UserCreateForm = ({ history, match }) => {
     }
     setUser({ name, email: value });
   };
+
   const saveUser = async () => {
     let _errors = errors;
     try {
@@ -72,6 +75,7 @@ const UserCreateForm = ({ history, match }) => {
       setErrorMessage(ex.message);
     }
   };
+  
   return (
     <Frame
       title={i("addUser")}

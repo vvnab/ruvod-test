@@ -19,7 +19,7 @@ import { Frame } from "./Frame";
 import { Error } from "./Error";
 import { USER, UPDATE_USER, DELETE_USER, USERS } from "../store";
 
-import styles from "./UserUpdateForm.module.scss";
+import styles from "./UserForm.module.scss";
 
 const Loading = () => (
   <Card>
@@ -109,6 +109,7 @@ const UserUpdateForm = ({ history, match }) => {
     }
     setUser({ email, name: value });
   };
+  
   const emailChange = e => {
     const { value } = e.target;
     if (isEmail(value)) {

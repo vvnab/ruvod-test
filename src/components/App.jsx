@@ -13,9 +13,9 @@ function App() {
       <ApolloProvider client={apolloClient}>
         <Router history={history}>
           <Switch>
-            <Route exact path="/" component={UserList} />
             <Route exact path="/users/new" component={UserCreateForm} />
             <Route exact path="/users/:id" component={UserUpdateForm} />
+            <Route component={UserList} />
           </Switch>
         </Router>
       </ApolloProvider>
